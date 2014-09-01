@@ -15,7 +15,7 @@ namespace Trx.Web.Controllers
         public ActionResult Index()
         {
             var db = new BlogDBContext();
-            db.Articles.Add(new Article { ArticleContent = "aaaaaa", ArticleId = Guid.NewGuid(), CreateTime = DateTime.Now,ModifyTime = DateTime.Now,IsDelete = false });
+            db.Articles.Add(new Article { ArticleContent = "bbbb", ArticleId = Guid.NewGuid(), CreateTime = DateTime.Now,ModifyTime = DateTime.Now,IsDelete = false });
             db.SaveChanges();
 
             return View(db.Articles.ToList());
