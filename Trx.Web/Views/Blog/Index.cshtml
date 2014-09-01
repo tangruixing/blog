@@ -1,0 +1,13 @@
+﻿@model List<Trx.Dao.Article>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach (var a in @Model)
+{
+    <h1>@a.ArticleId</h1>
+    <h1>@a.ArticleContent</h1>
+<h1>@a.CreateTime</h1>
+}
